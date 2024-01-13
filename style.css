@@ -76,6 +76,11 @@ nav li a {
     padding: 20px 25px;
 }
 
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
 .teams-container {
     display: flex;
     align-items: center;
@@ -126,8 +131,12 @@ nav li a {
         padding: 20px;
     }
 
-    nav {
+    nav, .teams-container {
         flex-direction: column;
+    }
+
+    .teams-img {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -136,7 +145,12 @@ nav li a {
         padding: 50px;
     }
 
-    nav {
+    nav, .teams-container {
         flex-direction: column;
+    }
+
+    .teams-content {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
